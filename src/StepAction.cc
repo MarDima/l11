@@ -11,10 +11,9 @@ StepAction::StepAction(EventAction *_event) {
     eventAction = _event;
 }
 
-
-
 void StepAction::UserSteppingAction(const G4Step *aStep) {
-    eventAction->addEnergyDeposit(aStep->GetTotalEnergyDeposit());
-    aStep->GetNumberOfSecondariesInCurrentStep();
+
+   // eventAction->addEnergyDeposit(aStep->GetTotalEnergyDeposit());
+    // aStep->GetNumberOfSecondariesInCurrentStep();
 
 }

@@ -5,24 +5,24 @@
 #include "../include/ActionInit.hh"
 
 ActionInit::ActionInit()
-{ scoring = new Scoring();}
+{ }
 
 ActionInit::~ActionInit()
 { }
 
 void ActionInit::Build() const
 {
-    auto runAction = new RunAction(scoring);
-    auto eventAction = new EventAction(runAction);
+    auto runAction = new RunAction();
+  auto eventAction = new EventAction(runAction);
 
 
     SetUserAction(new PrimaryGen());
-    SetUserAction(new StepAction(eventAction));
+  SetUserAction(new StepAction(eventAction));
 
 
-    SetUserAction(runAction);
+   SetUserAction(runAction);
 
 
-    SetUserAction(eventAction);
+   SetUserAction(eventAction);
 
 }

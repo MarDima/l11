@@ -12,9 +12,9 @@ private:
     G4double EnergyDeposit;
     RunAction* run;
 public:
-    void addEnergyDeposit(G4double EnergyDeposit);
 
-    EventAction(RunAction* run);
+
+   EventAction(RunAction* run);
 
 public:
     void BeginOfEventAction(const G4Event* anEvent);

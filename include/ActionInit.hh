@@ -5,10 +5,10 @@
 
 #include "G4VUserActionInitialization.hh"
 #include "PrimaryGen.hh"
-#include <Scoring.hh>
+
 class ActionInit : public G4VUserActionInitialization{
 private:
-    Scoring* scoring;
+
 public:
     ActionInit();
     virtual ~ActionInit();
