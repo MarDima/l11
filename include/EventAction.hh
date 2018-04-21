@@ -17,6 +17,7 @@ public:
    EventAction(RunAction* run);
 
 public:
+    void AdN(G4String f,G4String a);
     void BeginOfEventAction(const G4Event* anEvent);
     void EndOfEventAction(const G4Event* anEvent);
 

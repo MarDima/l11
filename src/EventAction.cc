@@ -17,6 +17,12 @@ void EventAction::EndOfEventAction(const G4Event *anEvent) {
        // run->setResult();
 
 }
+
+
+void EventAction::AdN(G4String f,G4String a)
+{
+
+}
 //
 //void EventAction::addEnergyDeposit(G4double EnergyDeposit) {
 //    EventAction::EnergyDeposit += EnergyDeposit;
