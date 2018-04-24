@@ -13,8 +13,15 @@ StepAction::StepAction(EventAction *_event) {
 
 void StepAction::UserSteppingAction(const G4Step *aStep)
 {
-    if(aStep->GetTotalEnergyDeposit()>0)
-eventAction->AdN( aStep->GetTrack()->GetVolume()->GetName(),aStep->GetTotalEnergyDeposit());
+    if(aStep->GetTotalEnergyDeposit()>=0);
+    //eventAction->AdN(aStep->GetTrack()->)
+
+
+
+
+
+
+//eventAction->AdN( aStep->GetTrack()->GetVolume()->GetName(),aStep->GetTotalEnergyDeposit());
    // aStep->GetTrack()->GetVolume()->GetName();
 
 

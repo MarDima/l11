@@ -10,14 +10,16 @@
 class EventAction : public G4UserEventAction{
 private:
     G4double EnergyDeposit;
+    std::map<G4String,G4double> *result;
     RunAction* run;
 public:
 
 
-   EventAction(RunAction* run);
+   explicit EventAction(RunAction* run);
+
 
 public:
-    void AdN(G4String f,G4String a);
+    void AdN(G4String &name,G4String e);
     void BeginOfEventAction(const G4Event* anEvent);
     void EndOfEventAction(const G4Event* anEvent);
 
